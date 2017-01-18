@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>易果生鲜Yiguo网_全球精选_生鲜果蔬 品质食材_易果网yiguo.com</title>
+		<link rel="shortcut icon" href="img/images/yiguo.ico">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<!--搜索栏的自动加载-->
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/nav_auto.js"></script>
+		<!--搜索栏的自动加载（止）-->
+	</head>
+	<body>
+		<!--最顶部工具栏-->
+		<div class="out_top">
+			<div class="center" id="maxtop">
+				<div class="left">
+					<span>欢迎光临易果生鲜！</span>
+					<span>配送至：</span>
+					<span>北京<p></p></span>
+				</div>
+				<div class="right">
+					<div class="login">[登录]</div>
+					<div class="login">[注册]</div>
+					<div class="yiguo yiguo1">
+						<img alt="" src="img/images/33_03.png" />
+						<span>我的易果</span>
+						<p></p>
+						<div id="dingdan">
+							<a href="">我的订单</a>
+							<a href="">我的优惠券<b>0</b></a>
+							<a href="">我的收藏</a>
+							<a href="">我的悠币</a>
+							<a href="">我的退换货</a>
+							<a href="">预存款查询</a>
+							<a href="">立即充值</a>
+						</div>
+					</div>
+					<div class="yiguo yiguo2">
+						<img alt="" src="img/images/334_03.png" />
+						<span>手机易果</span>
+						<p></p>
+						<div id="erweima">
+							<img class="one" alt="" src="img/images/qrcode_app.jpg" />
+							<article>扫一扫下载APP</article>
+							<img alt="" src="img/images/qrcode_wechat.jpg"/>
+							<article>易果生鲜微信</article>
+						</div>
+					</div>
+					<div>
+						<img alt="" src="img/images/111_08.png" />
+						<span>储值卡</span>
+					</div>
+					<div>
+						<img alt="" src="img/images/2_03.png" />
+						<span>提货券入口</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--logo及搜索栏部分-->
+		<div class="out_top2">
+			<div class="top2_center">
+				<div class="logo">
+					<a href="index.html"></a>
+				</div>
+				<div class="search">
+					<input id="tags" class="text" type="search" placeholder="输入商品名/编号/拼音" onfocus=" if (this.placeholder == '输入商品名/编号/拼音') {this.placeholder = '';this.style.background = '#fff';} " onblur=" if (this.placeholder == '') {this.placeholder = '输入商品名/编号/拼音';this.style.background = '#e0e0e0';} " />
+					<input class="btn" type="button" value="搜索" />
+					<div class="s_nav">
+						<span>年货</span>
+						<span>樱桃</span>
+						<span>脐橙</span>
+						<span>阿克苏</span>
+						<span>蓝莓</span>
+						<span>奇异果</span>
+						<span>三文鱼</span>
+						<span>羊肉</span>
+						<span>五常米</span>
+						<span>酸奶</span>
+					</div>
+				</div>
+				<div class="shopping-cart">
+					<dl>
+						<dt class="shopping-btn">
+							<a>
+								<span class="totleNum">
+									<b>0</b>
+								</span>
+								<b class="totlePrice">0.0</b>
+							</a>
+						</dt>
+						<dd class="shopping-list">
+							<div class="nogoods">购物车中还没有商品，赶紧选购吧！</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--logo先被隐藏，达到一定高度显示出来-->
+		<div class="logo_t">
+			<div class="t_wrap">
+				<div class="logo2">
+					<a href="index.html">
+						<img alt="" src="img/images/logo.png" />
+					</a>
+				</div>
+				<div class="search2">
+					<input id="tags" class="text" type="search" placeholder="输入商品名/编号/拼音" onfocus=" if (this.placeholder == '输入商品名/编号/拼音') {this.placeholder = '';this.style.background = '#fff';} " onblur=" if (this.placeholder == '') {this.placeholder = '输入商品名/编号/拼音';this.style.background = '#e0e0e0';} " />
+					<input class="btn" type="button" value="搜索" />
+					<div class="r_n">
+						<span>年货</span>
+						<span>樱桃</span>
+						<span>脐橙</span>
+						<span>阿克苏</span>
+						<span>蓝莓</span>
+						<span>奇异果</span>
+					</div>
+				</div>
+				<div class="shopping-cart">
+					<dl>
+						<dt class="shopping-btn">
+							<a>
+								<span class="totleNum">
+									<b>0</b>
+								</span>
+								<b class="totlePrice">0.0</b>
+							</a>
+						</dt>
+						<dd class="shopping-list">
+							<div class="nogoods">购物车中还没有商品，赶紧选购吧！</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--banner部分-->
+		<div class="out_banner">
+			<div class="ban_center">
+				<div class="gu" id="gu">
+					<img class="shang" alt="" src="img/images/_01a.jpg"/>
+				</div>
+				<div class="bg" id="main">
+					<img src="img/images/_01.jpg" />
+				</div>
+				<div id="pic"></div>
+				<div id="arrow">></div>
+				<div id="arrow1"><</div>
+				<!--nav导航部分-->
+				<div class="wrap">
+					<div class="nav">全部商品分类▼</div>
+					<div class="menu" id="menu">
+						<a href="">
+							<i></i>
+							进口水果
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							国产水果
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							精选肉类
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							禽类蛋品
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							海鲜水产
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							乳品糕点
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							新鲜蔬菜
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							方便素食
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							粮油杂货
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							饮料酒水
+							<span>></span>
+						</a>
+						<a href="">
+							<i></i>
+							礼品礼券
+							<span>></span>
+						</a>
+					</div>
+					<!--右侧的隐藏栏-->
+					<div class="list"></div>
+				</div>
+			</div>
+		</div>
+		<!--main广告     第一个-->
+		<div class="main_one">
+			<a href="">
+				<img alt="" src="img/images/main_1_03.png" />
+			</a>
+			<a href="">
+				<img alt="" src="img/images/main_2_03.png" />
+			</a>
+			<a href="">
+				<img alt="" src="img/images/main_3_03.png" />
+			</a>
+			<a href="">
+				<img alt="" src="img/images/main_4_03.png" />
+			</a>
+		</div>
+		
+		<!--main广告     排名1-->
+		<div id="main_one">
+			<h2>
+				<a>
+					<b>F1</b>
+					进口水果
+				</a>
+				<span>
+					<a href="">进口水果</a>|
+					<a href="">佳沛专区</a>|
+					<a href="">泰国鲜果</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名1的主题内容-->
+		<div class="main_three">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a1.jpg" />
+				</a>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a2.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a3.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a4.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a5.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a6.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a7.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名2-->
+		<div id="main_two">
+			<h2>
+				<a>
+					<b>F2</b>
+					国产水果
+				</a>
+				<span>
+					<a href="">果味四川</a>|
+					<a href="">秋日梨享</a>|
+					<a href="">甜蜜柚惑</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名2的主题内容-->
+		<div class="main_three">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a8.jpg" />
+				</a>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a9.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a10.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a11.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a12.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a13.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a14.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名3-->
+		<div id="main_three">
+			<h2>
+				<a>
+					<b>F3</b>
+					新鲜蔬菜
+				</a>
+				<span>
+					<a href="">套包专供</a>|
+					<a href="">人气粗粮</a>|
+					<a href="">健康有机</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名3的主题内容-->
+		<div class="main_three">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a15.jpg" />
+				</a>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a16.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a17.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a18.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a19.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a20.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a21.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名4-->
+		<div id="main_four">
+			<h2>
+				<a>
+					<b>F4</b>
+					海鲜水产
+				</a>
+				<span>
+					<a href="">刺身专区</a>|
+					<a href="">东海水产</a>|
+					<a href="">海产干货</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名4的主题内容-->
+		<div class="main_three">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a22.jpg" />
+				</a>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a23.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a24.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a25.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a26.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a27.jpg" />
+				</a>
+				<a href="">
+					<img alt="" src="img/images/main_a28.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名5-->
+		<div id="main_five">
+			<h2>
+				<a>
+					<b>F5</b>
+					精选肉类
+				</a>
+				<span>
+					<a href="">欧洲天然猪</a>|
+					<a href="">澳洲牛肉</a>|
+					<a href="">肉类制品</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名5的主题内容-->
+		<div class="main_five">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a29.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a30.jpg" />
+						</a>
+					</div>
+					<div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a31.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a32.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a33.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a34.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a36.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a37.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a38.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a39.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a40.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a41.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a35.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名6-->
+		<div id="main_six">
+			<h2>
+				<a>
+					<b>F6</b>
+					禽类蛋品
+				</a>
+				<span>
+					<a href="">原味蒸品</a>|
+					<a href="">原汁煲汤</a>|
+					<a href="">禽类分割品</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名6的主题内容-->
+		<div class="main_five">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a42.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a43.jpg" />
+						</a>
+					</div>
+					<div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a44.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a45.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a46.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a47.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a49.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a50.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a51.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a52.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a48.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名7-->
+		<div id="main_seven">
+			<h2>
+				<a>
+					<b>F7</b>
+					粮油杂货
+				</a>
+				<span>
+					<a href="">有机面食</a>|
+					<a href="">泰国名酱</a>|
+					<a href="">葵花籽油</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名7的主题内容-->
+		<div class="main_seven">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a53.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a54.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a55.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a56.jpg" />
+						</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a58.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a59.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a57.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名8-->
+		<div id="main_eight">
+			<h2>
+				<a>
+					<b>F8</b>
+					乳品糕点
+				</a>
+				<span>
+					<a href="">味全</a>|
+					<a href="">蛋糕名录</a>|
+					<a href="">try me 小蛋糕</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名8的主题内容-->
+		<div class="main_five">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a60.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a61.jpg" />
+						</a>
+					</div>
+					<div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a62.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a68.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a63.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a64.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a66.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a67.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a65.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名9-->
+		<div id="main_nine">
+			<h2>
+				<a>
+					<b>F9</b>
+					饮料酒水
+				</a>
+				<span>
+					<a href="">饮用水</a>|
+					<a href="">冲调品</a>|
+					<a href="">贝纳颂</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名9的主题内容-->
+		<div class="main_seven">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a69.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a70.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a71.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a72.jpg" />
+						</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a74.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a75.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a76.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a73.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--main广告     排名10-->
+		<div id="main_ten">
+			<h2>
+				<a>
+					<b>F10</b>
+					方便速食
+				</a>
+				<span>
+					<a href="">避风塘</a>|
+					<a href="">湾仔码头</a>|
+					<a href="">龙凤</a>
+				</span>
+			</h2>
+		</div>
+		<!--main广告     排名10的主题内容-->
+		<div class="main_five">
+			<div class="left">
+				<a href="">
+					<img alt="" src="img/images/main_a77.jpg" />
+				</a>
+			</div>
+			<div class="center">
+				<div class="top">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a78.jpg" />
+						</a>
+					</div>
+					<div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a79.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a81.jpg" />
+							</a>
+						</div>
+						<div>
+							<a href="">
+								<img alt="" src="img/images/main_a80.jpg" />
+							</a>
+							<a href="">
+								<img alt="" src="img/images/main_a82.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a84.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a85.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a86.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a87.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<img alt="" src="img/images/main_a88.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="">
+					<img alt="" src="img/images/main_a83.jpg" />
+				</a>
+			</div>
+		</div>
+		<!--楼层导航-->
+		<div class="floor-guide">
+			<a id="one" href="#main_one">
+				<i></i>
+				<p>进口水果</p>
+				<b></b>
+			</a>
+			<a id="two">
+				<i></i>
+				<p>国产水果</p>
+				<b></b>
+			</a>
+			<a id="three">
+				<i></i>
+				<p>新鲜蔬菜</p>
+				<b></b>
+			</a>
+			<a id="four">
+				<i></i>
+				<p>海鲜水产</p>
+				<b></b>
+			</a>
+			<a id="five">
+				<i></i>
+				<p>精选肉类</p>
+				<b></b>
+			</a>
+			<a id="six">
+				<i></i>
+				<p>禽类蛋品</p>
+				<b></b>
+			</a>
+			<a id="seven">
+				<i></i>
+				<p>粮油杂货</p>
+				<b></b>
+			</a>
+			<a id="eight">
+				<i></i>
+				<p>乳品糕点</p>
+				<b></b>
+			</a>
+			<a id="nine">
+				<i></i>
+				<p>饮料酒水</p>
+				<b></b>
+			</a>
+			<a id="ten">
+				<i></i>
+				<p>方便速食</p>
+				<b></b>
+			</a>
+		</div>
+		<!--右下角的：客服和返回顶部-->
+		<div class="sidebar">
+			<a class="service" href=""></a>
+			<span class="goTop" href=""></span>
+		</div>
+		<!--底部-->
+		<div class="footer_service">
+			<div class="center_service">
+				<div class="one">
+					<img alt="" src="img/images/foot_service_03.png" />|
+					<b>
+						<span>全球精选</span>
+						<p>一站式生鲜购物方案</p>
+					</b>
+				</div>
+				<div class="two">
+					<img alt="" src="img/images/foot_service_05.png" />|
+					<b>
+						<span>多仓直发</span>
+						<p>特有次日达配送服务</p>
+					</b>
+				</div>
+				<div class="three">
+					<img alt="" src="img/images/foot_service_07.png" />|
+					<b>
+						<span>源头直采</span>
+						<p>精选正宗品质好食材</p>
+					</b>
+				</div>
+				<div class="four">
+					<img alt="" src="img/images/foot_service_09.png" />|
+					<b>
+						<span>天天底价</span>
+						<p>会员专属优惠购不停</p>
+					</b>
+				</div>
+			</div>
+		</div>
+		<!--最底部信息-->
+		<div class="footer">
+			<div class="wrap">
+				<dl>
+					<dt>新手指南</dt>
+					<dd>
+						<p>账户注册</p>
+						<p>购物流程</p>
+						<p>订购方式</p>
+						<p>悠币说明</p>
+						<p>会员等级</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>付款方式</dt>
+					<dd>
+						<p>支付方式/发票说明</p>
+						<p>充值说明/储值卡说明</p>
+						<p>优惠代码/礼品卡说明</p>
+						<p>卡券购买章程</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>配送方式</dt>
+					<dd>
+						<p>配送运费</p>
+						<p>配送范围</p>
+						<p>配送时间</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd>
+						<p>退换货政策</p>
+						<p>退换货流程</p>
+						<p>常见问题</p>
+						<p>投诉与建议</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>关于我们</dt>
+					<dd>
+						<p>公司介绍</p>
+						<p>联系我们</p>
+						<p>业务合作</p>
+						<p>诚信举报</p>
+						<p>人才招聘</p>
+						<p>友情链接</p>
+					</dd>
+				</dl>
+				<div class="phone">
+					<span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+					<span>周一至周日 9:00-21:00</span>
+				</div>
+				<div class="copyright">
+					<p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+					<p>沪ICP备09008015号 Copyright © 2005-2017 上海易果电子商务有限公司版权所有</p>
+					<p>
+						<img alt="" src="img/images/copy_right.png" />
+						<img alt="" src="img/images/footer_copy.gif" />
+						<img alt="" src="img/images/ghs.png" />
+						<span>沪公网安备 31010502000002号</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
